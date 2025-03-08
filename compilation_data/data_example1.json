@@ -1,0 +1,24 @@
+{
+    "header": {
+        "compilationNumber": 1,
+        "month": "March",
+        "fortnight": "1st half"
+    },
+    "posts": [
+        {
+        "URL": "https://peakd.com/hive-174578/@ocdb/ocd-communities-incubation-program-update-154",
+        "comment": "This is a custom comment for post 1",
+        "preview": "This is a preview of the post 1"
+        },
+        {
+        "URL": "https://peakd.com/hive-185702/@mujaffa311/yvyuwdcq",
+        "comment": "This is a custom comment for post 2",
+        "preview": "This is a preview of the post 2"
+        },
+        {
+        "URL": "https://peakd.com/hive-173286/@agrante/completed-battle-pass-comments-and-suggestions",
+        "comment": "This is a custom comment for post 3",
+        "preview": "This is a preview of the post 3"
+        }
+    ]
+}

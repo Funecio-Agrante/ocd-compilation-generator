@@ -1,0 +1,20 @@
+{
+  "name": "ocd-compilation-generator",
+  "version": "1.0.0",
+  "description": "A Node.js tool for generating Hive compilation posts using Mustache/Handlebars templates.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  },
+  "keywords": ["mustache", "handlebars", "template", "post generator", "compilation"],
+  "author": "Funecio Agrante",
+  "license": "CC BY 4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ocd-compilation-generator.git"
+  }
+}
