@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Module Import</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input {
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="file"] {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        input[type="text"] {
+            width: min(100%, 600px);
+            padding: 10px 12px;
+            font-size: 18px;
+            margin-bottom: 5px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #e31337;
+            box-shadow: 0 0 0 2px #8d0b20;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #8d0b20;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-bottom: 15px;
+        }
+
+        button:hover {
+            background-color: #e31337;
+        }
+
+        #output {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 4px;
+            height: 400px;
+            background-color: #f9f9f9;
+            white-space: pre-wrap;
+            overflow-y: auto;
+            resize: vertical;
+            scrollbar-width: auto;
+            scrollbar-color: #888 #f1f1f1;
+        }
+
+        #output::-webkit-scrollbar {
+            width: 16px;
+            height: 16px;
+        }
+
+        #output::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 8px;
+        }
+
+        #output::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 8px;
+            border: 3px solid #f1f1f1;
+        }
+
+        #output::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .warn {
+            font-family: monospace;
+            font-weight: normal;
+            font-size: 14px;
+            color: #E65100;
+        }
+
+        .error {
+            font-family: monospace;
+            font-weight: normal;
+            font-size: 14px;
+            color: #ff0000;
+        }
+    </style>
+    <script type="module">
+        // Variables
+        const fileInput = document.getElementById('scriptFile');
+        const argsInput = document.getElementById('arguments');
+        const outputDiv = document.getElementById('output');
+        const runButton = document.getElementById('runButton');
+        const lastScriptHint = document.getElementById('lastScriptHint');
+
+        // Override console logging to capture output
+        const DualOutput = (method) => {
+            return (...args) => {
+                method.apply(console, args); // Still print to console
+                const methodType = method.name;
+                if (methodType === 'log') {
+                    const logMessage = args.join(' ');
+                    outputDiv.textContent += "\n" + logMessage;
+                    outputDiv.scrollTop = outputDiv.scrollHeight;
+                } else {
+                    const logMessage = args.join(' ');
+                    const messageElement = document.createElement('div');
+                    messageElement.classList.add(methodType);
+                    messageElement.textContent = logMessage;
+                    outputDiv.appendChild(messageElement);
+                    outputDiv.scrollTop = outputDiv.scrollHeight;
+                }
+            }
+        }
+
+        const originalConsole = {
+            log: console.log,
+            error: console.error,
+            warn: console.warn
+        };
+
+        console.log = DualOutput(originalConsole.log);
+        console.warn = DualOutput(originalConsole.warn);
+        console.error = DualOutput(originalConsole.error);
+
+        // Error handling
+        window.addEventListener('error', (e) => {
+            console.error(`Error: ${e.message} at ${e.filename}:${e.lineno}:${e.colno}`);
+            if (e.error && e.error.stack) {
+                console.error(e.error.stack);
+            }
+        });
+
+        window.addEventListener('unhandledrejection', (event) => {
+            console.error(`Unhandled Promise Rejection: ${event.reason}`);
+            if (event.reason && event.reason.stack) {
+                console.error(event.reason.stack);
+            }
+        });
+
+        // Store arguments whenever they change (debounced)
+        argsInput.addEventListener('input', Debounce(() => {
+            localStorage.setItem('lastArgs', argsInput.value);
+        }, 500));
+
+        // Debounce function for text field
+        const Debounce = (func, delay) => {
+            let timeout;
+            return function() {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(this, arguments), delay);
+            };
+        }
+        
+        // Auto-fill arguments field
+        const lastArgs = localStorage.getItem('lastArgs');
+        if (lastArgs) argsInput.value = lastArgs;
+
+        // Execute the script when ready
+        runButton.addEventListener('click', async () => {
+            if (fileInput.files.length === 0) {
+                console.warn('Please select a JavaScript file');
+                return;
+            }            
+
+            outputDiv.textContent = "Executing script...";
+            
+            const file = fileInput.files[0].name;
+            const args = argsInput.value.trim().split(/\s+/);
+
+            // Import and run the selected script
+            try {
+                import(`./${file}`);
+            } catch (error) {
+                // never reached
+                // goes directly to window.addEventListener('unhandledrejection'
+            }
+            
+            /*
+            import(`./${file}`)
+            .catch(err => {
+                console.warn(`Failed to load ${file}`);
+                console.error(`Error: ${err.message}`);
+                if (err.stack) {
+                    console.log(err.stack);
+                }
+            })
+            .finally(() => {
+                console.log('Module execution completed.');
+            });
+            */
+        });
+    </script>
+</head>
+<body>
+    <h1>JavaScript Script Runner</h1>
+    <div class="container">
+        <div class="input-group">
+            <label for="scriptFile">Select JavaScript File:</label>
+            <input type="file" id="scriptFile" accept=".js">
+        </div>
+        
+        <div class="input-group">
+            <label for="arguments">Input Argument(s):</label>
+            <input type="text" id="arguments" placeholder="Enter arguments (space-separated)">
+        </div>
+        
+        <button id="runButton">Run Script</button>
+        
+        <div class="input-group">
+            <label for="output">Output:</label>
+            <div id="output">Script output will appear here...</div>
+        </div>
+    </div>
+</body>
+</html>

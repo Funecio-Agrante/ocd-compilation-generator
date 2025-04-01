@@ -17,11 +17,11 @@ We encourage you to give these articles a read and show these great God on Chain
 | @imx.center | [Gumeta Update: Deck Codes!](https://peakd.com/hive-173286/@imx.center/gumeta-update-deck-codes) |
 <p></p>
 
-An important update that matters a lot to every player using Gumeta (seriously, that should literally be everyone) that brings deck codes for easy import into the game client or any other place you need.
+An important update that matters to every player using Gumeta (seriously, that should literally be everyone) bringing deck codes for easy import into the game client or any other place you need.
 
 [![Gumeta Update: Deck Codes!](https://files.peakd.com/file/peakd-hive/imx.center/23vsb4KMtqmRG6HPpi5YLixc4go3jUQuwyQJt6XiTJttfXcJDzkMoxZ7sZuEepBEZ5Kzp.png)](https://peakd.com/hive-173286/@imx.center/gumeta-update-deck-codes)
 
-> Did I say no more updates on Gumeta? I probably meant less focus on Gumeta development :)/nTo be honest, with the new Battle Pass and recent improvements in Gods Unchained, the future looks bright and I found new motivation to make Gumeta even better./nThis is a feature many of you were waiting for, especially...
+> Did I say no more updates on Gumeta? I probably meant less focus on Gumeta development :)<br>To be honest, with the new Battle Pass and recent improvements in Gods Unchained, the future looks bright and I found new motivation to make Gumeta even better.<br>This is a feature many of you were waiting for, especially...
 
 ![Compilation Divider.png](https://files.peakd.com/file/peakd-hive/agrante/23tbD2c2P2Leh2C6yJjGmLfCjsWoYQkP8CUjXJ2aY9RePdzxXp1Beoax18mw1zGRpQ2Kx.png)
 
@@ -47,7 +47,7 @@ A rather short post, but the true value lies in the 1 hour and 28 minutes video 
 
 [![Fallen Age Full Set Reaction: A GU YT Video](https://files.peakd.com/file/peakd-hive/cryptoniusrex/23x14nZ63eyYgf3K2GHABsZp8TmTW4n36Mn9mCBFuXurkBNsruhsNoao8F9HU6o3VUyvY.png)](https://peakd.com/hive-173286/@cryptoniusrex/fallen-age-full-set-reaction-a-gu-yt-video)
 
-> In this GU video I look at EVERY card in the set and give my thoughts. It&#x27;s all hashed out in there pretty well but to TLDR it there are strong things coming this set that are desirable for most of the gods. The hand drawn mythics are also snazzy. You can...
+> In this GU video I look at EVERY card in the set and give my thoughts. It's all hashed out in there pretty well but to TLDR it there are strong things coming this set that are desirable for most of the gods. The hand drawn mythics are also snazzy. You can...
 
 ![Compilation Divider.png](https://files.peakd.com/file/peakd-hive/agrante/23tbD2c2P2Leh2C6yJjGmLfCjsWoYQkP8CUjXJ2aY9RePdzxXp1Beoax18mw1zGRpQ2Kx.png)
 
@@ -56,11 +56,11 @@ A rather short post, but the true value lies in the 1 hour and 28 minutes video 
 | @cryptoniusrex | [Using EVERY light Atlantean in a deck at the same time! and some thoughts on the Archtype](https://peakd.com/hive-173286/@cryptoniusrex/using-every-light-atlantean-in-a-deck-at-the-same-time-and-some-thoughts-on-the-archtype) |
 <p></p>
 
-A very creative, out of the beaten path idea for a Light deck using some infamous and also seldom-used cards. It takes a special kind of talent to come up with ideas like this.
+A very creative, out-of-the-beaten-path idea for a Light deck using some infamous and also seldom-used cards. It takes a special kind of talent to come up with ideas like this.
 
 [![Using EVERY light Atlantean in a deck at the same time! and some thoughts on the Archtype](https://files.peakd.com/file/peakd-hive/cryptoniusrex/AKPkc2auZGQwKs12N7gFh4xYfxHWJ2VrpegzbYkdHsvoVxeM2BjwN84hdStEr39.jpg)](https://peakd.com/hive-173286/@cryptoniusrex/using-every-light-atlantean-in-a-deck-at-the-same-time-and-some-thoughts-on-the-archtype)
 
-> Yes, it&#x27;s a overheal light deck with BOTC. But I&#x27;ve been told it is more fun to play against than the norm, there is an interplay of bodies and removals not just Lysander sitting all by himself tossing spells left and right. Sadly cards like heiragon and prophet of progress require...
+> Yes, it's a overheal light deck with BOTC. But I've been told it is more fun to play against than the norm, there is an interplay of bodies and removals not just Lysander sitting all by himself tossing spells left and right. Sadly cards like heiragon and prophet of progress require...
 
 ![Compilation Divider.png](https://files.peakd.com/file/peakd-hive/agrante/23tbD2c2P2Leh2C6yJjGmLfCjsWoYQkP8CUjXJ2aY9RePdzxXp1Beoax18mw1zGRpQ2Kx.png)
 
@@ -73,7 +73,7 @@ Do you need to buy expensive cards to be competitive? Maybe not, and this author
 
 [![Gods Unchained: Do I Need an Expensive Deck to Play Well [EN/PT]](https://files.peakd.com/file/peakd-hive/ifhy/23uQg7ZbupEY76UYGWRmb5uK1fngeEv6J8c9U748oyMSNK6fBvRmYB7rCHw35hU5Rtm2N.png)](https://peakd.com/hive-173286/@ifhy/gods-unchained-do-i-need-an-expensive-deck-to-play-well-enpt)
 
-> If there’s one question that always comes up when we talk about Gods Unchained, it&#x27;s even on Reddit GodsUnchained./nDo I need an expensive deck to play well?/nCan I win against other players without making a big investment?/nAnd when I say play well, I’m not just talking about logging in, playing a match, and leaving. I mean climbing the ranks, earning some rewards, and feeling like you’re actually progressing...
+> If there’s one question that always comes up when we talk about Gods Unchained, it's even on Reddit GodsUnchained.<br>Do I need an expensive deck to play well?<br>Can I win against other players without making a big investment?<br>And when I say play well, I’m not just talking about logging in, playing a match, and leaving. I mean climbing the ranks, earning some rewards, and feeling like you’re actually progressing...
 
 ![Compilation Divider.png](https://files.peakd.com/file/peakd-hive/agrante/23tbD2c2P2Leh2C6yJjGmLfCjsWoYQkP8CUjXJ2aY9RePdzxXp1Beoax18mw1zGRpQ2Kx.png)
 
@@ -82,7 +82,7 @@ Do you need to buy expensive cards to be competitive? Maybe not, and this author
 | @agrante | [Elderytch Mysteries explained](https://peakd.com/hive-173286/@agrante/elderytch-mysteries-explained) |
 <p></p>
 
-In this post authored by me, I explain how the Elderytch Mysteries work, a group of cards for the Magic God in the Tides of Fate expansion set.
+In this post authored by me, I explain how the Elderytch Mysteries work, a group of cards for the Magic God in the Dread Awakening expansion set.
 
 [![Elderytch Mysteries explained](https://images.godsunchained.com/art2/720/102601.webp)](https://peakd.com/hive-173286/@agrante/elderytch-mysteries-explained)
 
