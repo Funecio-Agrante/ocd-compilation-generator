@@ -170,11 +170,6 @@
             }
         });
 
-        // Store arguments whenever they change (debounced)
-        argsInput.addEventListener('input', Debounce(() => {
-            localStorage.setItem('lastArgs', argsInput.value);
-        }, 500));
-
         // Debounce function for text field
         const Debounce = (func, delay) => {
             let timeout;
@@ -183,6 +178,11 @@
                 timeout = setTimeout(() => func.apply(this, arguments), delay);
             };
         }
+
+        // Store arguments whenever they change (debounced)
+        argsInput.addEventListener('input', Debounce(() => {
+            localStorage.setItem('lastArgs', argsInput.value);
+        }, 500));
         
         // Auto-fill arguments field
         const lastArgs = localStorage.getItem('lastArgs');
@@ -198,7 +198,6 @@
             outputDiv.textContent = "Executing script...";
             
             const file = fileInput.files[0].name;
-            const args = argsInput.value.trim().split(/\s+/);
 
             // Import and run the selected script
             try {
